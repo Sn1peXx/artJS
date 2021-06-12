@@ -3,6 +3,7 @@ import sliders from './modules/sliders';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import checkTextInputs from './modules/checkTextInputs';
+import showMoreCard from './modules/showMoreCard';
 
 window.addEventListener('DOMContentLoaded', () => {
     modal();
@@ -12,4 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
+    showMoreCard('.button-styles', '#styles .row');
+
 }); 

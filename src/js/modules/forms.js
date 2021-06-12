@@ -68,6 +68,14 @@ const forms = () => {
             statusMessage.appendChild(textMessage);
 
             const formData = new FormData(item);
+
+            try {
+                const price = document.querySelector('#price').innerHTML;
+                console.log(price)
+                formData.appendChild(price, price);
+            } catch{}
+            
+
             let api;
 			
 			// Выбираем путь до сервера для отпраки данных

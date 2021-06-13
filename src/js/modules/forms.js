@@ -20,11 +20,11 @@ const forms = () => {
     };
 
 
-
     const clearInputs = () => {
         inputs.forEach((item) => {
             item.value = "";
         });
+
 		upload.forEach(item => {
 			item.previousElementSibling.textContent = 'Файл не выбран';
 		});
@@ -69,12 +69,10 @@ const forms = () => {
 
             const formData = new FormData(item);
 
-            try {
-                const price = document.querySelector('#price').innerHTML;
-                console.log(price)
-                formData.appendChild(price, price);
-            } catch{}
-            
+            const price = document.querySelector('#price').innerHTML;
+            if (item.getAttribute("data-calc") === "price") {
+                formData.append('price', price);
+            }
 
             let api;
 			

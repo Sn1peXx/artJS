@@ -4,7 +4,7 @@ const mask = selector => {
     const setCursorPosition = (pos, elem) => {
         elem.focus();
         
-        if (elem.setSelectionRange) {
+        if (elem.setSelectionRange) { 
             elem.setSelectionRange(pos, pos);
         } else if (elem.createTextRange) {
             let range = elem.createTextRange();

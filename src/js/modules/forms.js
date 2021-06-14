@@ -8,7 +8,7 @@ const forms = () => {
     const message = {
         loading: "Загрузка...",
         success: "Спасибо, мы с вами свяжемся",
-        failure: "Произошла ошибка",
+        failure: "Произошла ошибка", 
         spinner: "assets/img/spinner.gif",
         ok: "assets/img/ok.png",
         fail: "assets/img/fail.png",
